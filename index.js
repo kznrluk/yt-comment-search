@@ -1,7 +1,5 @@
 const GetComment = require('./GetComment');
 const setting = {
-    baseUrl: "https://www.googleapis.com/youtube/v3/",
-    key: "",
     videoId: "GMPjNA_fCj4"
 }
 
