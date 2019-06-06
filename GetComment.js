@@ -1,14 +1,13 @@
 const setting = {
     baseUrl: "https://www.googleapis.com/youtube/v3/",
     key: "",
-    videoId: "GMPjNA_fCj4"
 }
 const fetch = require('node-fetch');
 
 module.exports = class GetComment {
     static async fromId(videoId, count = 10) {
         const params = new URLSearchParams();
-        
+
         params.set('key', setting.key);
         params.set('part', 'snippet');
         params.set('videoId', videoId);
